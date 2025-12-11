@@ -2,7 +2,7 @@ import time
 import random
 import threading
 
-class PodcastPublisher:
+class Publisher:
     def __init__(self):
         self.subscribers = []
         self.episodios = []

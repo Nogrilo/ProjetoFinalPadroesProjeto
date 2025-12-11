@@ -3,7 +3,7 @@ class Subscriber:
         pass
 
 
-class PodcastSubscriber(Subscriber):
+class Subscriber(Subscriber):
     def __init__(self):
         self.catalogo = []
 
