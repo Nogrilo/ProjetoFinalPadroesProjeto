@@ -15,7 +15,7 @@ def subscriberMenu(Subscriber):
             print("Programa Finalizado")
             exit()
         else:
-            print("Opção inválida!")
+            print("Opção invalida!")
 
 
 if __name__ == "__main__":
