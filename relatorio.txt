@@ -1,0 +1,23 @@
+Relatório
+
+Este trabalho apresenta a aplicação do padrão de projeto Observer em um sistema
+simples de podcasts.
+
+O padrão Observer é utilizado quando um objeto precisa informar automaticamente
+outros objetos sobre mudanças em seu estado. Nesse projeto, isso foi aplicado
+para que um catálogo de podcasts (publisher) notifique automaticamente um cliente
+(subscriber) sempre que um novo episódio for publicado (de forma aleatorio nesse projeto kk).
+
+O Publisher é responsável por gerar novos episódios em intervalos aleatórios e manter
+uma lista de subscribers cadastrados. Sempre que um novo episódio é criado, o
+publisher envia uma notificação para todos os subscribers registrados.
+
+O Subscriber recebe essas notificações por meio do método update() e armazena os
+episódios recebidos em um catálogo local. O subscriber não solicita episódios ao
+publisher, apenas recebe as atualizações automaticamente, conforme o padrão
+Observer.
+
+Fizemos uma interface simples.
+
+Com esse projeto, foi possível demonstrar de forma prática o funcionamento do
+padrão Observer, garantindo comunicação automática entre objetos.
