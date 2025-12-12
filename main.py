@@ -10,9 +10,9 @@ def subscriberMenu(Subscriber):
         op = input("Escolha uma opcao: ")
 
         if op == "1":
-            subscriber.show_catalog()
+            subscriber.mostrarCatalogo()
         elif op == "2":
-            print("Encerrando...")
+            print("Programa Finalizado")
             exit()
         else:
             print("Opção inválida!")

@@ -13,10 +13,10 @@ class Subscriber(Subscriber):
         self.catalogo.append(episodio)
 
     # consultar episodios
-    def show_catalog(self):
+    def mostrarCatalogo(self):
         if not self.episodio:
-            print("\nNenhum episódio no catálogo local.")
+            print("\nNenhum episodio no catalogo local.")
         else:
-            print("\nCatalogo local de episódios:")
+            print("\nCatalogo local de episodios:")
             for ep in self.catalogo:
                 print(f" - {ep}")
