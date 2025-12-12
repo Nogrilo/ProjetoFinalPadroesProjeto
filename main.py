@@ -1,10 +1,13 @@
 from Publisher import Publisher
 from Subscriber import Subscriber
 import threading
+import os
+
+def limparTela():
+    os.system("cls")
 
 def subscriberMenu(Subscriber):
     while True:
-        print("\n=== MENU DO SUBSCRIBER ===")
         print("1 - Listar episodios recebidos")
         print("2 - Sair")
         op = input("Escolha uma opcao: ")
@@ -19,6 +22,7 @@ def subscriberMenu(Subscriber):
 
 
 if __name__ == "__main__":
+    limparTela()
     publisher = Publisher()
     subscriber = Subscriber()
 

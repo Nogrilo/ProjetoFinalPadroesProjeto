@@ -1,9 +1,9 @@
-class Subscriber:
+class Observer:
     def update(self, episodio):
         pass
 
 
-class Subscriber(Subscriber):
+class Subscriber(Observer):
     def __init__(self):
         self.catalogo = []
 
@@ -14,7 +14,7 @@ class Subscriber(Subscriber):
 
     # consultar episodios
     def mostrarCatalogo(self):
-        if not self.episodio:
+        if not self.catalogo:
             print("\nNenhum episodio no catalogo local.")
         else:
             print("\nCatalogo local de episodios:")
